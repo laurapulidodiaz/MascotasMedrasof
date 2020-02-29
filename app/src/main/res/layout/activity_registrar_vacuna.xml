@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistrarVacuna">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_button"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/margin_button"
+            android:shadowColor="#2196F3"
+            android:text="Nueva Vacuna"
+            android:textAllCaps="true"
+            android:textColor="@color/design_default_color_primary_dark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:text="Mascota"
+                android:textFontWeight="300" />
+
+            <TextView
+                android:id="@+id/tv_mascota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_weight="2"
+                android:text="No ha seleccionado mascota."
+                android:textColor="@color/colorPrimary"
+                android:textFontWeight="300" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buscamascotaly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_busca_mascota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button"
+                android:layout_marginRight="@dimen/margin_button"
+                android:ems="10"
+                android:hint="Buscar mascota"
+                android:inputType="textPersonName" />
+
+            <ListView
+                android:id="@+id/list_mascotas"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="@dimen/margin_button" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/text_margin"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btn_volver_vacuna"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/margin_button"
+                    android:padding="@dimen/margin_button"
+                    android:text="Volver" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/vacunaspreviasly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:layout_marginTop="0dp"
+            android:text="Vacunas Previas"
+            android:textFontWeight="300" />
+
+            <ListView
+                android:id="@+id/list_vacunas"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="@dimen/margin_button" />
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/nuevavacunaly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_button"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/margin_button"
+            android:shadowColor="#2196F3"
+            android:text="Nuevo Registro"
+            android:textAllCaps="true"
+            android:textColor="@color/design_default_color_primary_dark" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:text="Vacuna" />
+
+            <EditText
+                android:id="@+id/et_nombre_vacuna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_button"
+                android:layout_marginBottom="@dimen/margin_button"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:text="Fecha" />
+
+            <EditText
+                android:id="@+id/et_fecha_vacuna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_button"
+                android:layout_marginBottom="@dimen/margin_button"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint="DD/MM/AAAA"
+                android:inputType="date" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:text="Dosis" />
+
+            <EditText
+                android:id="@+id/et_dosis_vacuna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_button"
+                android:layout_marginBottom="@dimen/margin_button"
+                android:layout_weight="2"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_cancelar_vacuna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_button"
+                android:padding="@dimen/margin_button"
+                android:text="Volver" />
+
+            <Button
+                android:id="@+id/btn_registrar_nueva_vacuna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_button"
+                android:padding="@dimen/margin_button"
+                android:text="Registrar Vacuna" />
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

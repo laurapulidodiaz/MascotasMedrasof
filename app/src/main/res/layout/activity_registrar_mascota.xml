@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistrarMascota">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_button"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/margin_button"
+        android:shadowColor="#2196F3"
+        android:text="Nueva Mascota"
+        android:textAllCaps="true"
+        android:textColor="@color/design_default_color_primary_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:text="Cédula" />
+
+        <EditText
+            android:id="@+id/et_cedula_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_button"
+            android:layout_marginBottom="@dimen/margin_button"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:text="Nombre" />
+
+        <EditText
+            android:id="@+id/et_nombre_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_button"
+            android:layout_marginBottom="@dimen/margin_button"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:text="Tipo" />
+
+        <Spinner
+            android:id="@+id/sp_tipo_mascota"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="@dimen/margin_button"
+            android:layout_marginBottom="@dimen/margin_button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:text="Edad" />
+
+        <EditText
+            android:id="@+id/et_edad_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_button"
+            android:layout_marginBottom="@dimen/margin_button"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:text="Raza" />
+
+        <EditText
+            android:id="@+id/et_raza_mascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_button"
+            android:layout_marginBottom="@dimen/margin_button"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button"
+                android:layout_marginTop="0dp"
+                android:layout_weight="1"
+                android:text="Propietario"
+                android:textFontWeight="300" />
+
+            <TextView
+                android:id="@+id/tv_propietario_mascota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_button"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="@dimen/margin_button"
+                android:layout_marginBottom="@dimen/margin_button"
+                android:layout_weight="2"
+                android:text="No ha seleccionado propietario."
+                android:textColor="@color/colorPrimary"
+                android:textFontWeight="300" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_propietario_mascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:layout_marginTop="@dimen/margin_button"
+            android:layout_marginRight="@dimen/margin_button"
+            android:ems="10"
+            android:hint="Buscar propietario"
+            android:inputType="textPersonName" />
+
+        <ListView
+            android:id="@+id/list_propietarios"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginLeft="@dimen/margin_button" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/text_margin"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btn_cancelar_nm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_button"
+                android:padding="@dimen/margin_button"
+                android:text="Volver" />
+
+            <Button
+                android:id="@+id/btn_registrar_nueva_mascota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/margin_button"
+                android:padding="@dimen/margin_button"
+                android:text="Registrar Mascota" />
+        </LinearLayout>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    tools:context=".SeleccionarActividad">
+
+    <Button
+        android:id="@+id/btn_registrar_mascota"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_button"
+        android:padding="@dimen/margin_button"
+        android:text="@string/registrar_mascota" />
+
+    <Button
+        android:id="@+id/btn_consulta_eliminacion"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_button"
+        android:padding="@dimen/margin_button"
+        android:text="@string/consulta_eliminacion" />
+
+    <Button
+        android:id="@+id/btn_registrar_vacuna"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_button"
+        android:padding="@dimen/margin_button"
+        android:text="@string/registrar_vacuna" />
+
+    <Button
+        android:id="@+id/btn_registrar_propiertario"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_button"
+        android:padding="@dimen/margin_button"
+        android:text="@string/registrar_propietario" />
+
+    <Button
+        android:id="@+id/btn_salir"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_button"
+        android:padding="@dimen/margin_button"
+        android:text="@string/salir" />
+</LinearLayout>

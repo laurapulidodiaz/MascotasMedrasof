@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_button"
+    android:orientation="vertical"
+    tools:context=".RegistrarPropietario">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/margin_button"
+        android:shadowColor="#2196F3"
+        android:text="Nuevo Propietario"
+        android:textAllCaps="true"
+        android:textColor="@color/design_default_color_primary_dark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:layout_marginTop="@dimen/margin_button"
+            android:layout_marginBottom="@dimen/margin_button"
+            android:layout_weight="1"
+            android:text="Cédula" />
+
+        <EditText
+            android:id="@+id/et_cedula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_button"
+            android:layout_marginRight="@dimen/margin_button"
+            android:layout_marginBottom="@dimen/margin_button"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:layout_marginTop="@dimen/margin_button"
+            android:layout_marginBottom="@dimen/margin_button"
+            android:layout_weight="1"
+            android:text="Nombre" />
+
+        <EditText
+            android:id="@+id/et_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_button"
+            android:layout_marginRight="@dimen/margin_button"
+            android:layout_marginBottom="@dimen/margin_button"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_button"
+            android:layout_marginTop="@dimen/margin_button"
+            android:layout_marginBottom="@dimen/margin_button"
+            android:layout_weight="1"
+            android:text="Telefono" />
+
+        <EditText
+            android:id="@+id/et_telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_button"
+            android:layout_marginRight="@dimen/margin_button"
+            android:layout_marginBottom="@dimen/margin_button"
+            android:layout_weight="2"
+            android:ems="10"
+            android:inputType="phone" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_registrar_nuevo_propietario"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_button"
+        android:padding="@dimen/margin_button"
+        android:text="Registrar Propietario" />
+</LinearLayout>
